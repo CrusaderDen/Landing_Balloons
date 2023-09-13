@@ -2,7 +2,7 @@
 //Это компонент кнопки   
 .btn
    border: 1px solid $color-grey
-   &:link, &:visited
+   &, &:link, &:visited
       @include style-link ($color-grey)
       font-size: 2rem
       background: $color-white
@@ -10,12 +10,14 @@
       border-radius: 5rem
       transition: all .07s
       position: relative
+      border: none
    &:hover
       transform: translateY(-.4rem)
       box-shadow: $box-shadow
       &::after
-         opacity: 0
-         transform: scaleX(1.5) scaleY(1.7)
+         animation: BtnFocus .5s ease 1
+      //    opacity: 0
+      //    transform: scaleX(1.5) scaleY(1.7)
    &:active
       background: #e8e8e8
       transform: translateY(-.2rem)
@@ -35,3 +37,16 @@
    &_animated
       animation: BtnToUp .5s ease 0.7s
       animation-fill-mode: backwards
+
+.btn_brown
+   &, &:link, &:visited
+      background: $color-brown-dark
+      color: $color-white
+      &::after
+         content: none
+      &:active
+         background: $color-brown-dark
+      &:hover
+         &::after
+            background: $color-brown-dark
+            animation: none

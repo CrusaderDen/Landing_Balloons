@@ -245,11 +245,11 @@
           </div>
         </section>
         <section class="section-feedback">
-         <div class="bg-gradient"></div>
-         <video class="bg-video" autoplay muted loop>
-            <source src="video/video-backgraund.mp4">
-            <source src="video/video-backgraund.webm">
-         </video>
+          <div class="bg-gradient"></div>
+          <video class="bg-video" autoplay muted loop>
+            <source src="video/video-backgraund.mp4" />
+            <source src="video/video-backgraund.webm" />
+          </video>
           <div class="text-align-center margin-bottom-80px">
             <h2 class="title-second title-second_white">
               отзывы наших клиентов
@@ -279,7 +279,9 @@
             <div class="feedback-card">
               <figure class="feedback-card__img">
                 <img src="img/feedback-2.jpg" alt="persone" />
-                <figcaption class="feedback-card__name">лиза фролова</figcaption>
+                <figcaption class="feedback-card__name">
+                  лиза фролова
+                </figcaption>
               </figure>
               <div class="feedback-card__box">
                 <h3 class="title-third margin-bottom-10px">
@@ -297,6 +299,74 @@
           </div>
           <div class="text-align-center">
             <a href="#!" class="btn btn_animated">забронировать</a>
+          </div>
+        </section>
+        <section class="section-book">
+          <div class="row">
+            <div class="book">
+              <div class="book-form">
+                <form action="#" class="form">
+                  <div class="text-align-center margin-bottom-30px">
+                    <h2 class="title-second">забронировать тур</h2>
+                  </div>
+                  <div class="form__group">
+                    <input
+                      type="text"
+                      class="form__input"
+                      placeholder="Имя Фамилия"
+                      id="name"
+                      autocomplete="off"
+                      required
+                    />
+                    <label for="name" class="form__label"
+                      >Ваше Имя и Фамилия</label
+                    >
+                  </div>
+                  <div class="form__group">
+                    <input
+                      type="email"
+                      class="form__input"
+                      placeholder="Ваш email"
+                      id="email"
+                      autocomplete="off"
+                      required
+                    />
+                    <label for="email" class="form__label"
+                      >Почтовый адрес</label
+                    >
+                  </div>
+                  <div class="form__group">
+                    <div class="form__group-radio">
+                      <input
+                        type="radio"
+                        class="form__input-radio"
+                        id="tour-1"
+                        name="checked"
+                      />
+                      <label for="tour-1" class="form__label-radio"
+                        ><span class="form__button-radio"></span>Групповой
+                        тур</label
+                      >
+                    </div>
+                    <div class="form__group-radio">
+                      <input
+                        type="radio"
+                        class="form__input-radio"
+                        id="tour-2"
+                        name="checked"
+                      />
+                      <label for="tour-2" class="form__label-radio"
+                        ><span class="form__button-radio"></span>Индивидуальный
+                        тур</label
+                      >
+                    </div>
+                  </div>
+                  <div class="form__group">
+                  <button class="btn btn_brown">забронировать</button>
+               </div>
+                </form>
+              </div>
+            </div>
           </div>
         </section>
       </main>
