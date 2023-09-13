@@ -5,12 +5,17 @@
 
 html
    font-size: 62.5%
-@media (max-width: 1350px)
-   html
+   @include respond(tab-gorizontal)
+      font-size: 56.25%
+   @include respond(tab-vertical)
       font-size: 50%
-@media (max-width: 900px)
-   html
-      font-size: 40%
+   @include respond(phone)
+      font-size: 30%
+   @include respond(big-screen)
+      font-size: 75%
+
+
+
 body
    padding: 5rem
    background: $color-white
