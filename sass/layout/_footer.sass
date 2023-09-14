@@ -3,20 +3,29 @@
    background: #333
    &__logo
       width: 12rem
+      @include respond(tab-port)
+         margin-bottom: 3rem
    &__list
       list-style: none
    &__item
       display: inline-block
       &:not(:last-child)
          margin-right: 5rem
-         
+      @include respond(tab-land)
+         &:not(:last-child)
+            margin-right: 1.6rem
+      @include respond(tab-port)
+         &:not(:last-child)
+            margin-right: 0rem
+         padding: 2rem
+
    &__link
       color: $color-white
       text-transform: uppercase
-      font-size: $font-size-paragraph
+      font-size: 1.6rem
       letter-spacing: 0.2rem
       font-weight: 300
-      text-decoration: none 
+      text-decoration: none
       display: inline-block
       transition: .3s all ease
       &:active
@@ -24,4 +33,3 @@
       &:hover
          transform: rotate(5deg) scale(1.2)
          text-shadow: $box-shadow-active
- 
